@@ -1,0 +1,4 @@
+LOAD DBF
+        FROM /tr/VEHICLES.DBF
+    INTO postgresql://postgres:postgres@postgres1:5432/postgres
+    WITH truncate, create table;
